@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner ref = new Scanner(System.in);
+	
+		System.out.println("Insira um  número máximo para uma sequencia de Fibonacci: ");
+		int numMaximo = ref.nextInt ();
+		
+		int d = 0;
+		int e = 1;
+		 System.out.println("A sequencia de Fibanacci é:");
+		 
+		 for (int i = 0; d <= numMaximo; i++) {
+		System.out.println ("" + d);
+		int soma = d + e;
+		d = e;
+		e = soma;
+		 }
+	}
+}
+		 
+	
